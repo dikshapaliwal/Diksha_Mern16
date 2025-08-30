@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diksha Paliwal - Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", sans-serif;
+      padding: 2rem;
+      background: #f9fafc;
+      color: #222;
+    }
+    .resume {
+      border: 2px solid #000;
+      border-radius: 12px;
+      padding: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 12px;
+      padding: 1rem;
+      background: #d7faff;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+      max-width: 600px;
+      width: 100%;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      width: 100%;
+    }
+    .contact-grid div {
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .contact-grid a {
+      color: #6bcafd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-grid a:hover { color: #0077b6; }
+    .body {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .left, .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      min-width: 280px;
+    }
+    section {
+      border: 2px solid black;
+      border-radius: 12px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    }
+    .heading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .address { background: #fde2e4; }
+    .address .heading { color: #d6336c; }
+
+    .skills { background: #dfe7fd; }
+    .skills .heading { color: #364fc7; }
+
+    .education { background: #fff1e6; }
+    .education .heading { color: #e67e22; }
+
+    .work { background: #f5e0fc; }
+    .work .heading { color: #ba5fca; }
+
+    .projects { background: #e4f1ee; }
+    .projects .heading { color: #2a9d8f; }
+
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; line-height: 1.4; }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .edu-item {
+      border: 1px solid #888;
+      border-radius: 8px;
+      background: #fff;
+      padding: 0.6rem;
+      font-size: 0.95rem;
+      line-height: 1.4rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .edu-item.full { grid-column: 1 / -1; }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .job {
+      border: 1px solid #888;
+      border-radius: 8px;
+      background: #fff;
+      padding: 0.6rem;
+      font-size: 0.95rem;
+      line-height: 1.8rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .project {
+      border: 1px solid #888;
+      border-radius: 8px;
+      background: #fff;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .project b { color: #2a9d8f; }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <h1>Diksha Paliwal</h1>
+      <div class="contact-box">
+        <div class="contact-grid">
+          <div>+91-8273364838</div>
+          <div>dikshapaliwal206@gmail.com</div>
+          <div><a href="https://www.linkedin.com/in/diksha-paliwal-731394362/">LinkedIn</a></div>
+          <div><a href="https://github.com/dikshapaliwal">GitHub</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+      <div class="left">
+        <section class="address">
+          <div class="heading">Address</div>
+          <p>Noida, India</p>
+        </section>
+
+        <section class="skills">
+          <div class="heading">Skills</div>
+          <ul>
+            <li>Python, Django, JavaScript</li>
+            <li>HTML, CSS, C, C++, PHP</li>
+            <li>Postman, GitHub, PgAdmin, Excel, Canva, Figma</li>
+            <li>PostgreSQL, SQL</li>
+            <li>REST API Development, SQL Optimization</li>
+          </ul>
+        </section>
+        <section class="projects">
+          <div class="heading">Projects</div>
+          <div class="project-list">
+            <div class="project">
+              <b>BiblioTrack</b>
+              <ul>
+                <li>Built book tracking app (add, explore, update status).</li>
+                <li>Features: User accounts, book catalog, personalized book lists.</li>
+                <li><strong>Tech Stack:</strong> Django, PostgreSQL, HTML/CSS</li>
+              </ul>
+            </div>
+            <div class="project">
+              <b>Student Portal</b>
+              <ul>
+                <li>Developed a responsive student portal with modern HTML & CSS.</li>
+                <li>Features course registration, results tracking, and profile management.</li>
+                <li><strong>Tech Stack: </strong>HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="right">
+        <section class="education">
+          <div class="heading">Education</div>
+          <div class="edu-grid">
+            <div class="edu-item"><b>10th</b><br>UP Board | 90%</div>
+            <div class="edu-item"><b>12th</b><br>CBSE | 84%</div>
+            <div class="edu-item full"><b>BCA</b><br>Maa Shakumbari University | graduating - 2026 <br> CGPA: 8.33 (currently)</div>
+            <div class="edu-item full"><b>Artificial Intelligence</b><br>Summer Training | IIT-Kanpur | 2025</div>
+          </div>
+        </section>
+
+        <section class="work">
+          <div class="heading">Work Experience</div>
+          <div class="work-grid">
+          <div class="job">
+            <b>Solution Designer | Nov 2024 - Present</b><br> Ambao Krishi Kutumb LLP
+            <ul>
+              <li>Designed end-to-end architecture across core business modules, ensuring scalability and seamless integration.</li>
+              <li>Led REST API planning, validation, and created detailed technical documentation for smooth backend-frontend collaboration.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <b>Software Developer | Aug 2023 - Oct 2024</b><br> Ambao Krishi Kutumb LLP
+            <ul>
+              <li>Developed production-grade Django REST APIs, optimized PostgreSQL queries, and implemented normalized database designs.</li>
+              <li>Built SQL-based reporting tools and contributed to schema design improvements, enhancing overall system performance.</li>
+            </ul>
+          </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
