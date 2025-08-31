@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diksha Paliwal_Layout Assignement</title>
+  <title>Diksha Paliwal - Resume</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -35,43 +35,33 @@
     header h1 {
       font-size: 2.2rem;
       font-weight: 700;
-      color: #2c3e50;
     }
 
-    .contactbox {
+    .contact-box {
       display: flex;
       justify-content: center;
-      border: 2px solid black;
-      border-radius: 12px;
       padding: 1rem;
-      background: #d7faff;
-      box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
-      max-width: 600px;
+      /* max-width: 100px; */
       width: 100%;
     }
-    .contactgrid {
+    .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       width: 100%;
     }
-    .contactgrid div {
+    .contact-grid div {
       border: 1px solid #444;
       border-radius: 8px;
       padding: 0.5rem 1rem;
       background: #fff;
       font-size: 0.95rem;
       font-weight: 500;
-      text-align: center;
-      word-break: break-word;
     }
-    .contactgrid a {
-      color: #6bcafd;
+    .contact-grid a {
       text-decoration: none;
       font-weight: 600;
     }
-    .contactgrid a:hover { color: #0077b6; }
-
     .body {
       display: flex;
       gap: 2rem;
@@ -85,94 +75,67 @@
       min-width: 280px;
     }
     section {
-      border: 2px solid black;
-      border-radius: 12px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
       box-shadow: 0 3px 8px rgba(0,0,0,0.06);
     }
-    .title {
+    .heading {
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.5rem;
     }
 
-    .address { background: #fde2e4; }
-    .address .title { color: #d6336c; }
-
-    .skills { background: #dfe7fd; }
-    .skills .title { color: #364fc7; }
-
-    .education { background: #fff1e6; }
-    .education .title { color: #e67e22; }
-
-    .work { background: #f5e0fc; }
-    .work .title { color: #ba5fca; }
-
-    .projects { background: #e4f1ee; }
-    .projects .title { color: #2a9d8f; }
-
     ul { padding-left: 1.5rem; }
     li { margin-bottom: 0.4rem; line-height: 1.4; }
 
-    .edugrid {
+    .edu-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem;
     }
-    .eduitem {
-      border: 1px solid #888;
-      border-radius: 8px;
+    .edu-item {
       background: #fff;
       padding: 0.6rem;
       font-size: 0.95rem;
       line-height: 1.4rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .eduitem.full { grid-column: 1 / -1; }
+    .edu-item.full { grid-column: 1 / -1; }
 
-    .workgrid {
+    .work-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1rem;
     }
     .job {
-      border: 1px solid #888;
-      border-radius: 8px;
       background: #fff;
       padding: 0.6rem;
       font-size: 0.95rem;
       line-height: 1.8rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
-    .projectlist {
+    .project-list {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
     .project {
-      border: 1px solid #888;
-      border-radius: 8px;
       background: #fff;
       padding: 0.6rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .project b { color: #2a9d8f; }
   </style>
 </head>
 <body>
   <div class="resume">
     <header>
       <h1>Diksha Paliwal</h1>
-      <div class="contactbox">
-        <div class="contactgrid">
-          <div>+91 8273364838</div>
+      <div class="contact-box">
+        <div class="contact-grid">
+          <div>+91-8273364838</div>
           <div>dikshapaliwal206@gmail.com</div>
           <div><a href="https://www.linkedin.com/in/diksha-paliwal-731394362/">LinkedIn</a></div>
           <div><a href="https://github.com/dikshapaliwal">GitHub</a></div>
@@ -182,12 +145,12 @@
     <div class="body">
       <div class="left">
         <section class="address">
-          <div class="title">Address</div>
+          <div class="heading">Address</div>
           <p>Noida, India</p>
         </section>
 
         <section class="skills">
-          <div class="title">Skills</div>
+          <div class="heading">Skills</div>
           <ul>
             <li>Python, Django, JavaScript</li>
             <li>HTML, CSS, C, C++, PHP</li>
@@ -197,8 +160,8 @@
           </ul>
         </section>
         <section class="projects">
-          <div class="title">Projects</div>
-          <div class="projectlist">
+          <div class="heading">Projects</div>
+          <div class="project-list">
             <div class="project">
               <b>BiblioTrack</b>
               <ul>
@@ -220,18 +183,18 @@
       </div>
       <div class="right">
         <section class="education">
-          <div class="title">Education</div>
-          <div class="edugrid">
-            <div class="eduitem"><b>10th</b><br>UP Board | 90%</div>
-            <div class="eduitem"><b>12th</b><br>CBSE | 84%</div>
-            <div class="eduitem full"><b>BCA</b><br>Maa Shakumbari University | graduating - 2026 <br> CGPA: 8.33 (currently)</div>
-            <div class="eduitem full"><b>Artificial Intelligence</b><br>Summer Training | IIT-Kanpur | 2025</div>
+          <div class="heading">Education</div>
+          <div class="edu-grid">
+            <div class="edu-item"><b>10th</b><br>UP Board | 90%</div>
+            <div class="edu-item"><b>12th</b><br>CBSE | 84%</div>
+            <div class="edu-item full"><b>BCA</b><br>Maa Shakumbari University | graduating - 2026 <br> CGPA: 8.33 (currently)</div>
+            <div class="edu-item full"><b>Artificial Intelligence</b><br>Summer Training | IIT-Kanpur | 2025</div>
           </div>
         </section>
 
         <section class="work">
-          <div class="title">Work Experience</div>
-          <div class="workgrid">
+          <div class="heading">Work Experience</div>
+          <div class="work-grid">
           <div class="job">
             <b>Solution Designer | Nov 2024 - Present</b><br> Ambao Krishi Kutumb LLP
             <ul>
