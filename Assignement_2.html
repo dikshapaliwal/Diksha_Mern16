@@ -9,8 +9,10 @@
     body {
       font-family: "Inter", sans-serif;
       padding: 2rem;
-      background: #f9fafc;
+      background: #f4f6f9;
       color: #222;
+      display: flex;
+      justify-content: center;
     }
     .resume {
       border: 2px solid #000;
@@ -20,9 +22,9 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
       max-width: 1100px;
-      margin: auto;
+      width: 100%;
     }
 
     header {
@@ -31,16 +33,28 @@
       gap: 1rem;
       align-items: center;
       text-align: center;
+      border-bottom: 3px solid #000;
+      padding-bottom: 1rem;
     }
     header h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
     }
 
     .contact-box {
       text-align: center;
       font-size: 0.95rem;
-      font-weight: 600;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.5rem;
+      justify-content: center;
+    }
+    .contact-box a {
+      text-decoration: none;
+      color: #0056b3;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
     }
 
     .body {
@@ -65,17 +79,28 @@
     .heading {
       font-size: 1.25rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
+      color: #333;
+      margin-bottom: 0.2rem;
+      padding-bottom: 0.3rem;
     }
 
-    ul { padding-left: 1.5rem; }
-    li { margin-bottom: 0.4rem; line-height: 1.4; }
+    ul {
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-left: 1.2rem;
+    }
+    li { line-height: 1.4; }
 
     .card {
-      background: #fff;
-      padding: 0.6rem;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.8rem;
       font-size: 0.95rem;
       line-height: 1.5rem;
+      transition: box-shadow 0.2s ease;
     }
 
     .edu-grid {
@@ -97,11 +122,10 @@
     <header>
       <h1>Diksha Paliwal</h1>
       <div class="contact-box">
-        <p>
-          +91-8273364838 || dikshapaliwal206@gmail.com <br><br>
-          https://www.linkedin.com/in/diksha-paliwal-731394362/ || 
-          https://github.com/dikshapaliwal
-        </p>
+        <span>+91-8273364838</span>
+        <span><a href="mailto:dikshapaliwal206@gmail.com">dikshapaliwal206@gmail.com</a></span>
+        <span><a href="https://www.linkedin.com/in/diksha-paliwal-731394362/" target="_blank">LinkedIn</a></span>
+        <span><a href="https://github.com/dikshapaliwal" target="_blank">GitHub</a></span>
       </div>
     </header>
 
@@ -150,8 +174,8 @@
         <section>
           <div class="heading">Education</div>
           <div class="edu-grid">
-            <div class="card"><b>10th</b><br>UP Board | 90%</div>
-            <div class="card"><b>12th</b><br>CBSE | 84%</div>
+            <div class="card"><b>High School (10th)</b><br> UP Board | 90% | 2020</div>
+            <div class="card"><b>Senior Secondary (12th)</b><br> CBSE | 84% | 2022</div>
             <div class="card full"><b>BCA</b><br>Maa Shakumbari University | graduating - 2026 <br> CGPA: 8.33 (currently)</div>
             <div class="card full"><b>Artificial Intelligence</b><br>Summer Training | IIT-Kanpur | 2025</div>
           </div>
